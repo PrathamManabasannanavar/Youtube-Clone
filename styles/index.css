@@ -267,3 +267,59 @@ body{
 .videoDescriptionBox{
     color: rgb(194, 206, 215);
 }
+
+/* Handling Responsiveness */
+@media (max-width:400px){
+    /* nav styling */
+    #leftNavBar{
+        display: none;
+    }
+
+    #upperNavBar{
+        justify-content: space-between;
+    }
+    #youtubeImageDashboardBox{
+        margin: 0;
+        padding: 0;
+        width: 50px;
+    }
+    #youtubeLogoBox div{
+        display: none;
+    }
+    #dashboardBox{
+        display: none;
+    }
+    #accountBox{
+        width: 25px;
+    }
+    #accountBox a{
+        display: none;
+    }
+    #searchBox img{
+        display: none;
+    }
+    #searchbar{
+        width: 100%;
+        padding-right: 8px;
+    }
+
+    /* content styling */
+    #contentBox{
+        margin:0;
+        margin-top: 50px;
+        padding: 3px;     
+    }
+    .videoDescriptionBox{
+        display: none;
+    }
+    .imageBox{
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+    }
+
+    .videoTitleBox, .viewsAndTimeBox{
+        width: 300px
+    }
+
+}

@@ -4,6 +4,13 @@ let voiceTypingImg = document.getElementById("voiceTypingBox");
 let cancelImage = document.getElementById("cancelImage");
 
 searchBox.addEventListener('keyup', ()=>{
+    if(window.innerWidth <= 400){
+        voiceTypingImg.style.display = "none";
+        if(searchBox.value == ""){
+            voiceTypingImg.style.display = "block";
+        }
+        return
+    }
     if(searchBox.value == ""){
         searchicon.style.display = "block";
         voiceTypingImg.style.display = "block"
